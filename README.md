@@ -2,7 +2,15 @@
 ````markdown
 # 📚 StudyHub
 
-StudyHub is a full-stack web application built for students to upload, browse, and download academic study materials like notes, PDFs, forms, and templates. Admins can manage content through a protected dashboard, while users can access verified documents by branch and semester.
+StudyHub is a full-stack web application built for students to
+upload,
+browse, and
+download academic study materials like notes,
+PDFs,
+forms, and
+templates.
+
+Admins can manage content through a protected dashboard, while users can access verified documents by branch and semester.
 
 ---
 
@@ -34,12 +42,12 @@ StudyHub is a full-stack web application built for students to upload, browse, a
 
 ## ⚙️ Installation & Setup
 
+````
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/StudyHub.git
 cd StudyHub
-````
 
 ### 2. Setup Backend
 
