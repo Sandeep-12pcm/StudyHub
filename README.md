@@ -1,5 +1,4 @@
 
-````markdown
 # 📚 StudyHub
 
 StudyHub is a full-stack web application built for students to
@@ -42,7 +41,6 @@ Admins can manage content through a protected dashboard, while users can access 
 
 ## ⚙️ Installation & Setup
 
-````
 ### 1. Clone the Repository
 
 ```bash
