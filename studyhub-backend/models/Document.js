@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const documentSchema = new mongoose.Schema({
   title: { type: String, required: true },
-  subjectID: { type: mongoose.Schema.Types.ObjectId, ref: 'Subject' },
+  subject: { type: String, required: true },
   fileUrl: { type: String, required: true },
   branch: { type: String, required: true },
   semester: { type: String, required: true },
