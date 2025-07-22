@@ -59,7 +59,7 @@ JWT_SECRET=your_jwt_secret
 Start the backend server:
 
 ```bash
-npm nodemon
+nodemon server
 ```
 
 ### 3. Setup Frontend
