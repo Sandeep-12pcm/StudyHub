@@ -225,10 +225,10 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: 'Pusti',
+                name: 'Pushti Dobariya',
                 role: 'Frontend Developer',
-                img: 'https://avatars.githubusercontent.com/u/187792563?v=4',
-                linkedin: 'https://linkedin.com/in/',
+                img: './contributors/pushti-dobariya.jpg',
+                linkedin: 'https://www.linkedin.com/in/pushti-dobariya-614b33347/',
                 github: 'https://github.com/Pushti1992',
               },
               {
@@ -241,7 +241,7 @@ const LandingPage = () => {
               {
                 name: 'Sandeep',
                 role: 'Backend Developer',
-                img: 'https://avatars.githubusercontent.com/u/187792563?v=4',
+                img: './contributors/sandeep.jpg',
                 linkedin: 'https://linkedin.com/in/sandeep12pcm',
                 github: 'https://github.com/Sandeep-12pcm',
               },
