@@ -44,7 +44,7 @@ cd StudyHub
 ### 2. Setup Backend
 
 ```bash
-cd server
+cd studyhub-backend
 npm install
 ```
 
@@ -59,13 +59,13 @@ JWT_SECRET=your_jwt_secret
 Start the backend server:
 
 ```bash
-npm start
+npm nodemon
 ```
 
 ### 3. Setup Frontend
 
 ```bash
-cd client
+cd studyhub-frontend
 npm install
 ```
 
@@ -75,40 +75,10 @@ Start the React frontend:
 npm start
 ```
 
----
-
-## 📁 Folder Structure
-
-```
-StudyHub/
-├── client/             # React frontend
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       └── utils/
-├── server/             # Node.js backend
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   └── uploads/        # PDF storage
-```
-
----
 
 ## 🔐 Admin Credentials
 
 Admins can login via `/admin/login`. JWT-based authentication protects all admin routes.
-
----
-
-## 📸 Screenshots
-
-| 📂 Upload Page        | 📊 Dashboard          |
-| --------------------- | --------------------- |
-| *Add screenshot here* | *Add screenshot here* |
-
----
-
 
 ---
 
