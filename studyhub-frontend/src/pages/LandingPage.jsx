@@ -222,28 +222,35 @@ const LandingPage = () => {
           >
             Meet the team driving IITRAM StudyHub's success.
           </motion.p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: 'Jane Doe',
-                role: 'Founder',
-                img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
-                linkedin: 'https://linkedin.com/in/janedoe',
-                github: 'https://github.com/janedoe',
+                name: 'Pusti',
+                role: 'Frontend Developer',
+                img: 'https://avatars.githubusercontent.com/u/187792563?v=4',
+                linkedin: 'https://linkedin.com/in/',
+                github: 'https://github.com/Pushti1992',
               },
               {
-                name: 'John Smith',
-                role: 'Lead Developer',
-                img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
-                linkedin: 'https://linkedin.com/in/johnsmith',
-                github: 'https://github.com/johnsmith',
+                name: 'Deeksha',
+                role: 'Frontend Developer',
+                img: 'https://avatars.githubusercontent.com/u/187792563?v=4',
+                linkedin: 'https://linkedin.com/in/',
+                github: 'https://github.com/Deeksha627',
               },
               {
-                name: 'Emily Brown',
-                role: 'Content Creator',
-                img: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60',
-                linkedin: 'https://linkedin.com/in/emilybrown',
-                github: 'https://github.com/emilybrown',
+                name: 'Sandeep',
+                role: 'Backend Developer',
+                img: 'https://avatars.githubusercontent.com/u/187792563?v=4',
+                linkedin: 'https://linkedin.com/in/sandeep12pcm',
+                github: 'https://github.com/Sandeep-12pcm',
+              },
+              {
+                name: 'Anshul Singhal',
+                role: 'Backend Developer',
+                img: './contributors/anshul-singhal.jpg',
+                linkedin: 'https://www.linkedin.com/in/anshul-singhal-114908321/',
+                github: 'https://github.com/anshulsinghal974',
               },
             ].map((member, index) => (
               <motion.div

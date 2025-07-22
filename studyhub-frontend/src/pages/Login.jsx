@@ -22,7 +22,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   useEffect(() => {
     const fetchDashboard = async () => {
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem('token') || localStorage.getItem('userID') || localStorage.getItem('user');
       if (token) {
         alert('Already Logged In, Please log out first');
         return navigate('/home');
@@ -91,6 +91,7 @@ const Login = () => {
           localStorage.setItem('user', JSON.stringify(res.data.user));
           localStorage.setItem('userID', res.data.user.id); // for feedback
           setIsLoggedIn(true);
+          
           navigate('/home');
         }
       } catch (err) {
