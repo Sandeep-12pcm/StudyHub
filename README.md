@@ -109,9 +109,6 @@ Admins can login via `/admin/login`. JWT-based authentication protects all admin
 
 ---
 
-## 📄 License
-
-This project is open source and free to use under the [MIT License](LICENSE).
 
 ---
 
