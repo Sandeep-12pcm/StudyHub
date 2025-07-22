@@ -23,26 +23,6 @@ const AddDocumentAdmin = () => {
     const [showConfirmDialog, setShowConfirmDialog] = useState(false);
     const [showConfirmDelete, setShowConfirmDelete] = useState(null);
     const navigate = useNavigate();
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (!file || !newDoc.title) return alert('Title and file are required');
-        const formData = new FormData();
-        formData.append('file', file);
-        formData.append('title', newDoc.title);
-        formData.append('semester', newDoc.semester);
-        formData.append('branch', newDoc.branch);
-
-        try {
-            const res = await axios.post('/documents', formData);
-            alert('Uploaded!');
-            console.log(res.data);
-            setShowAddDialog(false);
-
-        } catch (err) {
-            console.error('Upload failed', err);
-        }
-    };
     useEffect(() => {
         const fetchDashboard = async () => {
             const token = localStorage.getItem('adminToken');
@@ -50,20 +30,40 @@ const AddDocumentAdmin = () => {
                 alert('Please login as admin');
                 return navigate('/admin/login');
             }
+            axios.get('/documents')
+                .then(res => setDocuments(res.data))
+                .catch(err => console.error('Failed to fetch docs:', err));
         };
         fetchDashboard();
     }, []);
-    useEffect(() => {
-        axios.get('/documents')
-            .then(res => setDocuments(res.data))
-            .catch(err => console.error('Failed to fetch docs:', err));
-    }, []);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (!file || !newDoc.title) return alert('Title and file are required');
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('title', newDoc.title);
+        formData.append('subject', newDoc.subject);
+        formData.append('semester', newDoc.semester);
+        formData.append('branch', newDoc.branch);
+
+        try {
+            const res = await axios.post('/documents', formData);
+            alert('Uploaded!');
+            setShowAddDialog(false);
+        } catch (err) {
+            console.error('Upload failed', err);
+        }
+    };
+    // useEffect(() => {
+        
+        // }, []);
 
     const confirmAdd = () => {
         setDocuments([...documents, { ...newDoc, id: Date.now() }]);
         setShowAddDialog(false);
         setShowConfirmDialog(false);
-        setNewDoc({ title: '', branch: '', semester: '' });
+        setNewDoc({ title: '', branch: '', subject: '', semester: '' });
     };
     const handleDelete = (id) => setShowConfirmDelete(id);
 
@@ -152,6 +152,14 @@ const AddDocumentAdmin = () => {
                                     }`}
                                 placeholder="Document Title"
                             />
+                            <input
+                                name="subject"
+                                value={newDoc.subject}
+                                onChange={(e) => setNewDoc({ ...newDoc, subject: e.target.value })}
+                                className={`w-full p-3 rounded-lg border ${darkMode ? 'border-gray-600 bg-gray-700 text-white placeholder-gray-400' : 'border-gray-300 bg-white text-black placeholder-gray-500'
+                                    }`}
+                                placeholder="Document Subject"
+                            />
                             <select
                                 name="branch"
                                 value={newDoc.branch}
@@ -185,7 +193,7 @@ const AddDocumentAdmin = () => {
                                 <option value="7th">7th</option>
                                 <option value="8th">8th</option>
                             </select>
-                            <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+                            <input type="file" accept='.pdf, image/*' onChange={(e) => setFile(e.target.files[0])} />
                             <div className="flex justify-end gap-3">
                                 <button onClick={() => setShowAddDialog(false)} className="px-4 py-2 rounded-lg bg-gray-300 text-gray-700 hover:bg-gray-400">Cancel</button>
                                 <button type='submit' className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Add</button>

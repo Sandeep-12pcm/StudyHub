@@ -9,6 +9,7 @@ router.post('/', upload.single('file'), async (req, res) => {
     const newDoc = new Document({
       title: req.body.title,
       semester: req.body.semester,
+      subject: req.body.subject, // Added subject field
       fileUrl: req.file.filename,
       branch: req.body.branch,
     });
