@@ -222,7 +222,7 @@ const LandingPage = () => {
           >
             Meet the team driving IITRAM StudyHub's success.
           </motion.p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 name: 'Pushti Dobariya',
@@ -231,13 +231,13 @@ const LandingPage = () => {
                 linkedin: 'https://www.linkedin.com/in/pushti-dobariya-614b33347/',
                 github: 'https://github.com/Pushti1992',
               },
-              {
-                name: 'Deeksha',
-                role: 'Frontend Developer',
-                img: 'https://avatars.githubusercontent.com/u/187792563?v=4',
-                linkedin: 'https://linkedin.com/in/',
-                github: 'https://github.com/Deeksha627',
-              },
+              // {
+              //   name: 'Deeksha',
+              //   role: 'Frontend Developer',
+              //   img: 'https://avatars.githubusercontent.com/u/187792563?v=4',
+              //   linkedin: 'https://linkedin.com/in/',
+              //   github: 'https://github.com/Deeksha627',
+              // },
               {
                 name: 'Sandeep',
                 role: 'Backend Developer',
