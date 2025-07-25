@@ -29,7 +29,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchMaterials = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/documents');
+        const response = await fetch('https://studyhub-9yiy.onrender.com/api/documents');
         const data = await response.json();
         setMaterials(data);  // set fetched data
         console.log(data)
@@ -275,7 +275,7 @@ const Dashboard = () => {
 
                 {/* Download Button */}
                 <button
-                  onClick={() => window.open(`http://localhost:3001/uploads/${material.fileUrl}`, '_blank')}
+                  onClick={() => window.open(`https://studyhub-9yiy.onrender.com/uploads/${material.fileUrl}`, '_blank')}
                   className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-blue-500/25 transform hover:-translate-y-1 group-hover:scale-105"
                 >
                   <Download className="h-5 w-5 transition-transform duration-300 group-hover:animate-bounce" />
