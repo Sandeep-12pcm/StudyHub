@@ -104,7 +104,7 @@ const LandingPage = () => {
         >
           <div className="lg:w-1/2">
             <motion.img
-              src="https://images.unsplash.com/photo-1516321310762-479437144403?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+              src="https://images.squarespace-cdn.com/content/v1/589dfd233e00be383d4cdc4f/1624437402845-VAZRWO5VI4GIU3KS0V2B/top-six.jpg"
               alt="Study Resources"
               className="rounded-2xl shadow-lg w-full h-48 sm:h-56 lg:h-64 object-cover"
               initial={{ opacity: 0, x: -30 }}
