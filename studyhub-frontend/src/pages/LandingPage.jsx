@@ -63,7 +63,7 @@ const LandingPage = () => {
           animate="visible"
         >
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white dark:text-gray-100 leading-tight">
-            Excel with <span className="text-blue-200 dark:text-blue-400">IITRAM StudyHub</span>
+            Excel with <span className="text-blue-200 dark:text-blue-400"> StudyHub</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-gray-100 dark:text-gray-300 max-w-md sm:max-w-lg md:max-w-xl mx-auto mb-6">
             Access premium study resources, past papers, and notes for academic excellence.
@@ -121,7 +121,7 @@ const LandingPage = () => {
               transition={{ duration: 0.4 }}
               viewport={{ once: true }}
             >
-              About IITRAM StudyHub
+              About  StudyHub
             </motion.h2>
             <motion.p
               className="text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-relaxed"
@@ -130,7 +130,7 @@ const LandingPage = () => {
               transition={{ duration: 0.4, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              IITRAM StudyHub offers a seamless platform with high-quality study materials, including past exam papers and detailed notes, tailored to your academic goals.
+               StudyHub offers a seamless platform with high-quality study materials, including past exam papers and detailed notes, tailored to your academic goals.
             </motion.p>
             <motion.p
               className="text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-relaxed mt-3"
@@ -220,7 +220,7 @@ const LandingPage = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Meet the team driving IITRAM StudyHub's success.
+            Meet the team driving  StudyHub's success.
           </motion.p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[

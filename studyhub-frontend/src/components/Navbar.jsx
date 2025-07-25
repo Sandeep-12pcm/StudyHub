@@ -105,7 +105,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             onClick={() => navigate('/')}
           >
-            IITRAM StudyHub
+             StudyHub
           </motion.div>
           <motion.button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -189,7 +189,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             onClick={() => navigate('/')}
           >
-            IITRAM StudyHub
+             StudyHub
           </motion.div>
 
           {/* Navigation Items */}
